@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>generics.collections: Generics.Collections: Class TCustomAVLTreeMap</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>generics.collections</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
+<span id="TCustomAVLTreeMap"></span><h1 class="cio">Class TCustomAVLTreeMap</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-InternalCRs">Internal Classes and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-InternalTypes">Internal Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="Generics.Collections.html">Generics.Collections</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TCustomAVLTreeMap&lt;TKey,TValue,TInfo&gt; = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TCustomAVLTreeMap</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-InternalCRs"></span><h3 class="summary">Internal Classes and Records</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.TKeyCollection.html">TKeyCollection</a></b> = class(<a  href="Generics.Collections.TTreeEnumerable.html">TTreeEnumerable</a>&lt;<a  href="Generics.Collections.TCustomAVLTreeMap.TKeyEnumerator.html">TKeyEnumerator</a>,<a  href="Generics.Collections.TCustomAVLTreeMap.TPKeyEnumerator.html">TPKeyEnumerator</a>,TKey,<a  href="Generics.Collections.TCustomAVLTreeMap.html#PKey">PKey</a>,<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>,TTree&gt;)</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.TKeyEnumerator.html">TKeyEnumerator</a></b> = class(<a  href="Generics.Collections.TAVLTreeEnumerator.html">TAVLTreeEnumerator</a>&lt;TKey,<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>,TTree&gt;)</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.TNodeCollection.html">TNodeCollection</a></b> = class(<a  href="Generics.Collections.TTreeEnumerable.html">TTreeEnumerable</a>&lt;<a  href="Generics.Collections.TCustomAVLTreeMap.TNodeEnumerator.html">TNodeEnumerator</a>,TPNodeEnumerator,<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>,<a  href="Generics.Collections.TCustomAVLTreeMap.html#PPNode">PPNode</a>,<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>,TTree&gt;)</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.TNodeEnumerator.html">TNodeEnumerator</a></b> = class(<a  href="Generics.Collections.TAVLTreeEnumerator.html">TAVLTreeEnumerator</a>&lt;<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>,<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>,TTree&gt;)</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.TPairEnumerator.html">TPairEnumerator</a></b> = class(<a  href="Generics.Collections.TAVLTreeEnumerator.html">TAVLTreeEnumerator</a>&lt;<a  href="Generics.Collections.TCustomAVLTreeMap.html#TTreePair">TTreePair</a>,<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>,TTree&gt;)</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.TPKeyEnumerator.html">TPKeyEnumerator</a></b> = class(<a  href="Generics.Collections.TAVLTreeEnumerator.html">TAVLTreeEnumerator</a>&lt;<a  href="Generics.Collections.TCustomAVLTreeMap.html#PKey">PKey</a>,<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>,TTree&gt;)</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.TPValueEnumerator.html">TPValueEnumerator</a></b> = class(<a  href="Generics.Collections.TAVLTreeEnumerator.html">TAVLTreeEnumerator</a>&lt;<a  href="Generics.Collections.TCustomAVLTreeMap.html#PValue">PValue</a>,<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>,TTree&gt;)</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.TValueCollection.html">TValueCollection</a></b> = class(<a  href="Generics.Collections.TTreeEnumerable.html">TTreeEnumerable</a>&lt;<a  href="Generics.Collections.TCustomAVLTreeMap.TValueEnumerator.html">TValueEnumerator</a>,<a  href="Generics.Collections.TCustomAVLTreeMap.TPValueEnumerator.html">TPValueEnumerator</a>,TValue,<a  href="Generics.Collections.TCustomAVLTreeMap.html#PValue">PValue</a>,<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>,TTree&gt;)</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.TValueEnumerator.html">TValueEnumerator</a></b> = class(<a  href="Generics.Collections.TAVLTreeEnumerator.html">TAVLTreeEnumerator</a>&lt;TValue,<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>,TTree&gt;)</code></td>
+</tr>
+</table>
+<span id="PasDoc-InternalTypes"></span><h3 class="summary">Internal Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.html#PKey">PKey</a></b> = &circ;TKey;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a></b> = &circ;<a  href="Generics.Collections.TCustomAVLTreeMap.html#TNode">TNode</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.html#PPNode">PPNode</a></b> = &circ;<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.html#PValue">PValue</a></b> = &circ;TValue;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.html#TNode">TNode</a></b> = <a  href="Generics.Collections.TAVLTreeNode.html">TAVLTreeNode</a>&lt; TKey, TValue, TInfo, TTree&gt;;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.html#TTreePair">TTreePair</a></b> = <a  href="Generics.Collections.TPair.html">TPair</a>&lt;TKey, TValue&gt;;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.html#FCount">FCount</a></b>: SizeInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.html#FRoot">FRoot</a></b>: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.html#FKeys">FKeys</a></b>: <a  href="Generics.Collections.TEnumerable.html">TEnumerable</a>&lt;TKey&gt;;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.html#FValues">FValues</a></b>: <a  href="Generics.Collections.TEnumerable.html">TEnumerable</a>&lt;TValue&gt;;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.html#FOnNodeNotify">FOnNodeNotify</a></b>: <a  href="Generics.Collections.html#TNodeNotifyEvent">TNodeNotifyEvent</a>&lt;<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>&gt;;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.html#FOnKeyNotify">FOnKeyNotify</a></b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TKey&gt;;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomAVLTreeMap.html#FOnValueNotify">FOnValueNotify</a></b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TValue&gt;;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#NodeAdded">NodeAdded</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#DeletingNode">DeletingNode</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; AOrigin: boolean); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#DoRemove">DoRemove</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; ACollectionNotification: <a  href="Generics.Collections.html#TCollectionNotification">TCollectionNotification</a>; ADispose: boolean): TValue;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#DisposeAllNodes">DisposeAllNodes</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#Compare">Compare</a></b>(constref ALeft, ARight: TKey): Integer; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#FindPredecessor">FindPredecessor</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>): <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#FindInsertNode">FindInsertNode</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; out AInsertNode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#RotateRightRight">RotateRightRight</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#RotateLeftLeft">RotateLeftLeft</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#RotateRightLeft">RotateRightLeft</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#RotateLeftRight">RotateLeftRight</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#KeyNotify">KeyNotify</a></b>(constref AKey: TKey; ACollectionNotification: <a  href="Generics.Collections.html#TCollectionNotification">TCollectionNotification</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#ValueNotify">ValueNotify</a></b>(constref AValue: TValue; ACollectionNotification: <a  href="Generics.Collections.html#TCollectionNotification">TCollectionNotification</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#NodeNotify">NodeNotify</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; ACollectionNotification: <a  href="Generics.Collections.html#TCollectionNotification">TCollectionNotification</a>; ADispose: boolean); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#SetValue">SetValue</a></b>(var AValue: TValue; constref ANewValue: TValue);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#WriteStr">WriteStr</a></b>(AStream: TStream; const AText: string);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#Create">Create</a></b>; virtual; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#Create">Create</a></b>(const AComparer: IComparer&lt;TKey&gt;); virtual; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#NewNode">NewNode</a></b>: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#NewNodeArray">NewNodeArray</a></b>(ACount: SizeInt): <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#NewNodeArray">NewNodeArray</a></b>(out AArray: TArray&lt;<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>&gt;; ACount: SizeInt); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#DisposeNode">DisposeNode</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#DisposeNodeArray">DisposeNodeArray</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; ACount: SizeInt); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#DisposeNodeArray">DisposeNodeArray</a></b>(var AArray: TArray&lt;<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>&gt;); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#AddNode">AddNode</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>): boolean; overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#Add">Add</a></b>(constref APair: <a  href="Generics.Collections.TCustomAVLTreeMap.html#TTreePair">TTreePair</a>): <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#Add">Add</a></b>(constref AKey: TKey; constref AValue: TValue): <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#Remove">Remove</a></b>(constref AKey: TKey; ADisposeNode: boolean = true): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#ExtractPair">ExtractPair</a></b>(constref AKey: TKey; ADisposeNode: boolean = true): <a  href="Generics.Collections.TCustomAVLTreeMap.html#TTreePair">TTreePair</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#ExtractPair">ExtractPair</a></b>(constref ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; ADispose: boolean = true): <a  href="Generics.Collections.TCustomAVLTreeMap.html#TTreePair">TTreePair</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#ExtractNode">ExtractNode</a></b>(constref AKey: TKey; ADisposeNode: boolean): <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#ExtractNode">ExtractNode</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; ADispose: boolean): <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#Delete">Delete</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; ADispose: boolean = true); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#GetEnumerator">GetEnumerator</a></b>: <a  href="Generics.Collections.TCustomAVLTreeMap.TPairEnumerator.html">TPairEnumerator</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#Clear">Clear</a></b>(ADisposeNodes: Boolean = true); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#FindLowest">FindLowest</a></b>: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#FindHighest">FindHighest</a></b>: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#Find">Find</a></b>(constref AKey: TKey): <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#ContainsKey">ContainsKey</a></b>(constref AKey: TKey; out ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>): boolean; overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#ContainsKey">ContainsKey</a></b>(constref AKey: TKey): boolean; overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#ConsistencyCheck">ConsistencyCheck</a></b>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#WriteTreeNode">WriteTreeNode</a></b>(AStream: TStream; ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#WriteReportToStream">WriteReportToStream</a></b>(AStream: TStream);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#NodeToReportStr">NodeToReportStr</a></b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>): string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#ReportAsString">ReportAsString</a></b>: string;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#Nodes">Nodes</a></b>: <a  href="Generics.Collections.TCustomAVLTreeMap.TNodeCollection.html">TNodeCollection</a> read GetNodeCollection;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#Count">Count</a></b>: SizeInt read <a  href="Generics.Collections.TCustomAVLTreeMap.html#FCount">FCount</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#Root">Root</a></b>: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a> read <a  href="Generics.Collections.TCustomAVLTreeMap.html#FRoot">FRoot</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#Keys">Keys</a></b>: <a  href="Generics.Collections.TCustomAVLTreeMap.TKeyCollection.html">TKeyCollection</a> read GetKeys;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#Values">Values</a></b>: <a  href="Generics.Collections.TCustomAVLTreeMap.TValueCollection.html">TValueCollection</a> read GetValues;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#Duplicates">Duplicates</a></b>: <a  href="Generics.Collections.html#TDuplicates">TDuplicates</a> read FDuplicates write FDuplicates;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#OnNodeNotify">OnNodeNotify</a></b>: <a  href="Generics.Collections.html#TNodeNotifyEvent">TNodeNotifyEvent</a>&lt;<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>&gt; read <a  href="Generics.Collections.TCustomAVLTreeMap.html#FOnNodeNotify">FOnNodeNotify</a> write <a  href="Generics.Collections.TCustomAVLTreeMap.html#FOnNodeNotify">FOnNodeNotify</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#OnKeyNotify">OnKeyNotify</a></b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TKey&gt; read <a  href="Generics.Collections.TCustomAVLTreeMap.html#FOnKeyNotify">FOnKeyNotify</a> write <a  href="Generics.Collections.TCustomAVLTreeMap.html#FOnKeyNotify">FOnKeyNotify</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomAVLTreeMap.html#OnValueNotify">OnValueNotify</a></b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TValue&gt; read <a  href="Generics.Collections.TCustomAVLTreeMap.html#FOnValueNotify">FOnValueNotify</a> write <a  href="Generics.Collections.TCustomAVLTreeMap.html#FOnValueNotify">FOnValueNotify</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Internal Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PKey"></span><code><b>PKey</b> = &circ;TKey;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PNode"></span><code><b>PNode</b> = &circ;<a  href="Generics.Collections.TCustomAVLTreeMap.html#TNode">TNode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PPNode"></span><code><b>PPNode</b> = &circ;<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PValue"></span><code><b>PValue</b> = &circ;TValue;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TNode"></span><code><b>TNode</b> = <a  href="Generics.Collections.TAVLTreeNode.html">TAVLTreeNode</a>&lt; TKey, TValue, TInfo, TTree&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TTreePair"></span><code><b>TTreePair</b> = <a  href="Generics.Collections.TPair.html">TPair</a>&lt;TKey, TValue&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCount"></span><code><b>FCount</b>: SizeInt;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FRoot"></span><code><b>FRoot</b>: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FKeys"></span><code><b>FKeys</b>: <a  href="Generics.Collections.TEnumerable.html">TEnumerable</a>&lt;TKey&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FValues"></span><code><b>FValues</b>: <a  href="Generics.Collections.TEnumerable.html">TEnumerable</a>&lt;TValue&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FOnNodeNotify"></span><code><b>FOnNodeNotify</b>: <a  href="Generics.Collections.html#TNodeNotifyEvent">TNodeNotifyEvent</a>&lt;<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FOnKeyNotify"></span><code><b>FOnKeyNotify</b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TKey&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FOnValueNotify"></span><code><b>FOnValueNotify</b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TValue&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="NodeAdded"></span><code>procedure <b>NodeAdded</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DeletingNode"></span><code>procedure <b>DeletingNode</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; AOrigin: boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DoRemove"></span><code>function <b>DoRemove</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; ACollectionNotification: <a  href="Generics.Collections.html#TCollectionNotification">TCollectionNotification</a>; ADispose: boolean): TValue;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DisposeAllNodes"></span><code>procedure <b>DisposeAllNodes</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Compare"></span><code>function <b>Compare</b>(constref ALeft, ARight: TKey): Integer; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FindPredecessor"></span><code>function <b>FindPredecessor</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>): <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FindInsertNode"></span><code>function <b>FindInsertNode</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; out AInsertNode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="RotateRightRight"></span><code>procedure <b>RotateRightRight</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="RotateLeftLeft"></span><code>procedure <b>RotateLeftLeft</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="RotateRightLeft"></span><code>procedure <b>RotateRightLeft</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="RotateLeftRight"></span><code>procedure <b>RotateLeftRight</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="KeyNotify"></span><code>procedure <b>KeyNotify</b>(constref AKey: TKey; ACollectionNotification: <a  href="Generics.Collections.html#TCollectionNotification">TCollectionNotification</a>); inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ValueNotify"></span><code>procedure <b>ValueNotify</b>(constref AValue: TValue; ACollectionNotification: <a  href="Generics.Collections.html#TCollectionNotification">TCollectionNotification</a>); inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="NodeNotify"></span><code>procedure <b>NodeNotify</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; ACollectionNotification: <a  href="Generics.Collections.html#TCollectionNotification">TCollectionNotification</a>; ADispose: boolean); inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetValue"></span><code>procedure <b>SetValue</b>(var AValue: TValue; constref ANewValue: TValue);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="WriteStr"></span><code>procedure <b>WriteStr</b>(AStream: TStream; const AText: string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+for reporting</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>; virtual; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(const AComparer: IComparer&lt;TKey&gt;); virtual; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NewNode"></span><code>function <b>NewNode</b>: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NewNodeArray"></span><code>function <b>NewNodeArray</b>(ACount: SizeInt): <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NewNodeArray"></span><code>procedure <b>NewNodeArray</b>(out AArray: TArray&lt;<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>&gt;; ACount: SizeInt); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DisposeNode"></span><code>procedure <b>DisposeNode</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DisposeNodeArray"></span><code>procedure <b>DisposeNodeArray</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; ACount: SizeInt); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DisposeNodeArray"></span><code>procedure <b>DisposeNodeArray</b>(var AArray: TArray&lt;<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>&gt;); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddNode"></span><code>function <b>AddNode</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>): boolean; overload; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>function <b>Add</b>(constref APair: <a  href="Generics.Collections.TCustomAVLTreeMap.html#TTreePair">TTreePair</a>): <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; overload; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>function <b>Add</b>(constref AKey: TKey; constref AValue: TValue): <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; overload; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Remove"></span><code>function <b>Remove</b>(constref AKey: TKey; ADisposeNode: boolean = true): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ExtractPair"></span><code>function <b>ExtractPair</b>(constref AKey: TKey; ADisposeNode: boolean = true): <a  href="Generics.Collections.TCustomAVLTreeMap.html#TTreePair">TTreePair</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ExtractPair"></span><code>function <b>ExtractPair</b>(constref ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; ADispose: boolean = true): <a  href="Generics.Collections.TCustomAVLTreeMap.html#TTreePair">TTreePair</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ExtractNode"></span><code>function <b>ExtractNode</b>(constref AKey: TKey; ADisposeNode: boolean): <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ExtractNode"></span><code>function <b>ExtractNode</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; ADispose: boolean): <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Delete"></span><code>procedure <b>Delete</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>; ADispose: boolean = true); inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetEnumerator"></span><code>function <b>GetEnumerator</b>: <a  href="Generics.Collections.TCustomAVLTreeMap.TPairEnumerator.html">TPairEnumerator</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <b>Clear</b>(ADisposeNodes: Boolean = true); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FindLowest"></span><code>function <b>FindLowest</b>: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FindHighest"></span><code>function <b>FindHighest</b>: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Find"></span><code>function <b>Find</b>(constref AKey: TKey): <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ContainsKey"></span><code>function <b>ContainsKey</b>(constref AKey: TKey; out ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>): boolean; overload; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ContainsKey"></span><code>function <b>ContainsKey</b>(constref AKey: TKey): boolean; overload; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConsistencyCheck"></span><code>procedure <b>ConsistencyCheck</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="WriteTreeNode"></span><code>procedure <b>WriteTreeNode</b>(AStream: TStream; ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="WriteReportToStream"></span><code>procedure <b>WriteReportToStream</b>(AStream: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NodeToReportStr"></span><code>function <b>NodeToReportStr</b>(ANode: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ReportAsString"></span><code>function <b>ReportAsString</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Nodes"></span><code>property <b>Nodes</b>: <a  href="Generics.Collections.TCustomAVLTreeMap.TNodeCollection.html">TNodeCollection</a> read GetNodeCollection;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Count"></span><code>property <b>Count</b>: SizeInt read <a  href="Generics.Collections.TCustomAVLTreeMap.html#FCount">FCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Root"></span><code>property <b>Root</b>: <a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a> read <a  href="Generics.Collections.TCustomAVLTreeMap.html#FRoot">FRoot</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Keys"></span><code>property <b>Keys</b>: <a  href="Generics.Collections.TCustomAVLTreeMap.TKeyCollection.html">TKeyCollection</a> read GetKeys;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Values"></span><code>property <b>Values</b>: <a  href="Generics.Collections.TCustomAVLTreeMap.TValueCollection.html">TValueCollection</a> read GetValues;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Duplicates"></span><code>property <b>Duplicates</b>: <a  href="Generics.Collections.html#TDuplicates">TDuplicates</a> read FDuplicates write FDuplicates;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnNodeNotify"></span><code>property <b>OnNodeNotify</b>: <a  href="Generics.Collections.html#TNodeNotifyEvent">TNodeNotifyEvent</a>&lt;<a  href="Generics.Collections.TCustomAVLTreeMap.html#PNode">PNode</a>&gt; read <a  href="Generics.Collections.TCustomAVLTreeMap.html#FOnNodeNotify">FOnNodeNotify</a> write <a  href="Generics.Collections.TCustomAVLTreeMap.html#FOnNodeNotify">FOnNodeNotify</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnKeyNotify"></span><code>property <b>OnKeyNotify</b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TKey&gt; read <a  href="Generics.Collections.TCustomAVLTreeMap.html#FOnKeyNotify">FOnKeyNotify</a> write <a  href="Generics.Collections.TCustomAVLTreeMap.html#FOnKeyNotify">FOnKeyNotify</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnValueNotify"></span><code>property <b>OnValueNotify</b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TValue&gt; read <a  href="Generics.Collections.TCustomAVLTreeMap.html#FOnValueNotify">FOnValueNotify</a> write <a  href="Generics.Collections.TCustomAVLTreeMap.html#FOnValueNotify">FOnValueNotify</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>
