@@ -12,7 +12,7 @@
 <h2>generics.collections</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
 <span id="TDictionaryEnumerable"></span><h1 class="cio">Class TDictionaryEnumerable</h1>
 <div class="sections">
-<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
 <a  href="Generics.Collections.html">Generics.Collections</a></p>
@@ -27,21 +27,32 @@ TDictionaryEnumerable</p>
 <li class="ancestor"><a class="normal" href="Generics.Collections.TEnumerable.html">TEnumerable</a></li>
 <li class="ancestor"><a class="normal" href="Generics.Collections.TEnumerableWithPointers.html">TEnumerableWithPointers</a></li>
 <li class="thisitem">TDictionaryEnumerable</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TDictionaryEnumerable.html#FDictionary">FDictionary</a></b>: <a  href="Generics.Collections.TCustomDictionary.html">TCustomDictionary</a>&lt; TKey, TValue, THashFactory&gt;;</code></td>
+</tr>
+</table>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TDictionaryEnumerable.html#GetCount">GetCount</a></b>: SizeInt;</code></td>
+</tr>
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TDictionaryEnumerable.html#GetPtrEnumerator">GetPtrEnumerator</a></b>: <a  href="Generics.Collections.TEnumerator.html">TEnumerator</a>&lt;<a  href="Generics.Collections.TEnumerable.html#PT">PT</a>&gt;; override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TDictionaryEnumerable.html#DoGetEnumerator">DoGetEnumerator</a></b>: TDictionaryEnumerator; override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>constructor <b><a  href="Generics.Collections.TDictionaryEnumerable.html#Create">Create</a></b>(ADictionary: <a  href="Generics.Collections.TCustomDictionary.html">TCustomDictionary</a>&lt; TKey, TValue, THashFactory&gt;);</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TDictionaryEnumerable.html#ToArray">ToArray</a></b>: TArray&lt;T&gt;; override; final;</code></td>
 </tr>
@@ -50,11 +61,30 @@ TDictionaryEnumerable</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="Generics.Collections.TDictionaryEnumerable.html#Count">Count</a></b>: SizeInt read GetCount;</code></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TDictionaryEnumerable.html#Count">Count</a></b>: SizeInt read <a  href="Generics.Collections.TDictionaryEnumerable.html#GetCount">GetCount</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="FDictionary"></span><code><b>FDictionary</b>: <a  href="Generics.Collections.TCustomDictionary.html">TCustomDictionary</a>&lt; TKey, TValue, THashFactory&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+... inherits from TCustomDictionaryEnumerator. workaround...</p>
+</td></tr>
+</table>
 <h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="GetCount"></span><code>function <b>GetCount</b>: SizeInt;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
@@ -91,7 +121,7 @@ TDictionaryEnumerable</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Count"></span><code>property <b>Count</b>: SizeInt read GetCount;</code></td>
+<td class="itemcode"><span id="Count"></span><code>property <b>Count</b>: SizeInt read <a  href="Generics.Collections.TDictionaryEnumerable.html#GetCount">GetCount</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>

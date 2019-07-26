@@ -41,10 +41,14 @@ More info: <a  href="http://stackoverflow.com/questions/5232198/about-vectors-gr
 <span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
 <table class="summary wide_list">
 <tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomList.html#FOnNotify">FOnNotify</a></b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;T&gt;;</code></td>
+</tr>
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code><b><a  href="Generics.Collections.TCustomList.html#FLength">FLength</a></b>: SizeInt;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code><b><a  href="Generics.Collections.TCustomList.html#FItems">FItems</a></b>: array of T;</code></td>
 </tr>
@@ -52,34 +56,38 @@ More info: <a  href="http://stackoverflow.com/questions/5232198/about-vectors-gr
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomList.html#GetCapacity">GetCapacity</a></b>: SizeInt; inline;</code></td>
+</tr>
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomList.html#PrepareAddingItem">PrepareAddingItem</a></b>: SizeInt; virtual;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomList.html#PrepareAddingRange">PrepareAddingRange</a></b>(ACount: SizeInt): SizeInt; virtual;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomList.html#Notify">Notify</a></b>(constref AValue: T; ACollectionNotification: <a  href="Generics.Collections.html#TCollectionNotification">TCollectionNotification</a>); virtual;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomList.html#DoRemove">DoRemove</a></b>(AIndex: SizeInt; ACollectionNotification: <a  href="Generics.Collections.html#TCollectionNotification">TCollectionNotification</a>): T; virtual;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomList.html#SetCapacity">SetCapacity</a></b>(AValue: SizeInt); virtual; abstract;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomList.html#GetCount">GetCount</a></b>: SizeInt; virtual;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TCustomList.html#ToArray">ToArray</a></b>: TArray&lt;T&gt;; override; final;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TCustomList.html#TrimExcess">TrimExcess</a></b>; virtual; abstract;</code></td>
 </tr>
@@ -92,11 +100,11 @@ More info: <a  href="http://stackoverflow.com/questions/5232198/about-vectors-gr
 </tr>
 <tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomList.html#Capacity">Capacity</a></b>: SizeInt read GetCapacity write <a  href="Generics.Collections.TCustomList.html#SetCapacity">SetCapacity</a>;</code></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomList.html#Capacity">Capacity</a></b>: SizeInt read <a  href="Generics.Collections.TCustomList.html#GetCapacity">GetCapacity</a> write <a  href="Generics.Collections.TCustomList.html#SetCapacity">SetCapacity</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomList.html#OnNotify">OnNotify</a></b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;T&gt; read FOnNotify write FOnNotify;</code></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomList.html#OnNotify">OnNotify</a></b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;T&gt; read <a  href="Generics.Collections.TCustomList.html#FOnNotify">FOnNotify</a> write <a  href="Generics.Collections.TCustomList.html#FOnNotify">FOnNotify</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -122,6 +130,14 @@ bug #24282</p>
 <h3 class="detail">Fields</h3>
 <table class="detail wide_list">
 <tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="FOnNotify"></span><code><b>FOnNotify</b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;T&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><span id="FLength"></span><code><b>FLength</b>: SizeInt;</code></td>
 </tr>
@@ -137,6 +153,14 @@ bug #24282</p>
 &nbsp;</td></tr>
 </table>
 <h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="GetCapacity"></span><code>function <b>GetCapacity</b>: SizeInt; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
@@ -213,7 +237,7 @@ bug #24282</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Capacity"></span><code>property <b>Capacity</b>: SizeInt read GetCapacity write <a  href="Generics.Collections.TCustomList.html#SetCapacity">SetCapacity</a>;</code></td>
+<td class="itemcode"><span id="Capacity"></span><code>property <b>Capacity</b>: SizeInt read <a  href="Generics.Collections.TCustomList.html#GetCapacity">GetCapacity</a> write <a  href="Generics.Collections.TCustomList.html#SetCapacity">SetCapacity</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
@@ -221,7 +245,7 @@ bug #24282</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="OnNotify"></span><code>property <b>OnNotify</b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;T&gt; read FOnNotify write FOnNotify;</code></td>
+<td class="itemcode"><span id="OnNotify"></span><code>property <b>OnNotify</b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;T&gt; read <a  href="Generics.Collections.TCustomList.html#FOnNotify">FOnNotify</a> write <a  href="Generics.Collections.TCustomList.html#FOnNotify">FOnNotify</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>

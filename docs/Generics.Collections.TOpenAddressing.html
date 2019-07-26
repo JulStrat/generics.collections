@@ -12,7 +12,7 @@
 <h2>generics.collections</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
 <span id="TOpenAddressing"></span><h1 class="cio">Class TOpenAddressing</h1>
 <div class="sections">
-<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-InternalCRs">Internal Classes and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-InternalTypes">Internal Types</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-InternalCRs">Internal Classes and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-InternalTypes">Internal Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
 <a  href="Generics.Collections.html">Generics.Collections</a></p>
@@ -29,20 +29,28 @@ bug #24283 and #24097 (forward declaration) - should be: TCustomDictionary&lt;CU
 <span id="PasDoc-InternalCRs"></span><h3 class="summary">Internal Classes and Records</h3>
 <table class="summary wide_list">
 <tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TOpenAddressing.TItem.html">TItem</a></b> = record</code></td>
+</tr>
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code><b><a  href="Generics.Collections.TOpenAddressing.TKeyCollection.html">TKeyCollection</a></b> = class(<a  href="Generics.Collections.TDictionaryEnumerable.html">TDictionaryEnumerable</a>&lt;<a  href="Generics.Collections.TOpenAddressing.TKeyEnumerator.html">TKeyEnumerator</a>,<a  href="Generics.Collections.TOpenAddressing.TPKeyEnumerator.html">TPKeyEnumerator</a>,TKey,TKey,TValue,THashFactory&gt;)</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code><b><a  href="Generics.Collections.TOpenAddressing.TKeyEnumerator.html">TKeyEnumerator</a></b> = class(<a  href="Generics.Collections.TOpenAddressingEnumerator.html">TOpenAddressingEnumerator</a>&lt;TKey,TKey,TValue,THashFactory,TProbeSequence&gt;)</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code><b><a  href="Generics.Collections.TOpenAddressing.TPairEnumerator.html">TPairEnumerator</a></b> = class(<a  href="Generics.Collections.TOpenAddressingEnumerator.html">TOpenAddressingEnumerator</a>&lt;<a  href="Generics.Collections.TCustomDictionary.html#TDictionaryPair">TDictionaryPair</a>,TKey,TValue,THashFactory,TProbeSequence&gt;)</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code><b><a  href="Generics.Collections.TOpenAddressing.TPKeyEnumerator.html">TPKeyEnumerator</a></b> = class(<a  href="Generics.Collections.TOpenAddressingEnumerator.html">TOpenAddressingEnumerator</a>&lt;<a  href="Generics.Collections.TCustomDictionary.html#PKey">PKey</a>,TKey,TValue,THashFactory,TProbeSequence&gt;)</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TOpenAddressing.TPointersEnumerator.html">TPointersEnumerator</a></b> = class(<a  href="Generics.Collections.TOpenAddressingPointersEnumerator.html">TOpenAddressingPointersEnumerator</a>&lt;<a  href="Generics.Collections.TOpenAddressing.TItem.html">TItem</a>,<a  href="Generics.Collections.TCustomDictionary.html#PDictionaryPair">PDictionaryPair</a>&gt;)</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -60,12 +68,43 @@ bug #24283 and #24097 (forward declaration) - should be: TCustomDictionary&lt;CU
 <span id="PasDoc-InternalTypes"></span><h3 class="summary">Internal Types</h3>
 <table class="summary wide_list">
 <tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TOpenAddressing.html#PItem">PItem</a></b> = &circ;<a  href="Generics.Collections.TOpenAddressing.TItem.html">TItem</a>;</code></td>
+</tr>
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><b><a  href="Generics.Collections.TOpenAddressing.html#PPointersCollection">PPointersCollection</a></b> = &circ;TPointersCollection;</code></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TOpenAddressing.html#PPointersCollection">PPointersCollection</a></b> = &circ;<a  href="Generics.Collections.TOpenAddressing.html#TPointersCollection">TPointersCollection</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TOpenAddressing.html#TItemsArray">TItemsArray</a></b> = array of <a  href="Generics.Collections.TOpenAddressing.TItem.html">TItem</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TOpenAddressing.html#TPointersCollection">TPointersCollection</a></b> = <a  href="Generics.Collections.TOpenAddressingPointersCollection.html">TOpenAddressingPointersCollection</a>&lt;<a  href="Generics.Collections.TOpenAddressing.TPointersEnumerator.html">TPointersEnumerator</a>, <a  href="Generics.Collections.TOpenAddressing.TItem.html">TItem</a>, <a  href="Generics.Collections.TCustomDictionary.html#PDictionaryPair">PDictionaryPair</a>&gt;;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>var <b><a  href="Generics.Collections.TOpenAddressing.html#FItems">FItems</a></b>: <a  href="Generics.Collections.TOpenAddressing.html#TItemsArray">TItemsArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TOpenAddressing.html#FItemsThreshold">FItemsThreshold</a></b>: SizeInt;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TOpenAddressing.html#Resize">Resize</a></b>(ANewSize: SizeInt);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TOpenAddressing.html#PrepareAddingItem">PrepareAddingItem</a></b>;</code></td>
+</tr>
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TOpenAddressing.html#RealItemsLength">RealItemsLength</a></b>: SizeInt; virtual;</code></td>
@@ -80,11 +119,35 @@ bug #24283 and #24097 (forward declaration) - should be: TCustomDictionary&lt;CU
 </tr>
 <tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>function <b><a  href="Generics.Collections.TOpenAddressing.html#FindBucketIndex">FindBucketIndex</a></b>(constref AItems: TArray&lt;TItem&gt;; constref AKey: TKey; out AHash: UInt32): SizeInt; virtual; abstract; overload;</code></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TOpenAddressing.html#FindBucketIndex">FindBucketIndex</a></b>(constref AItems: TArray&lt;<a  href="Generics.Collections.TOpenAddressing.TItem.html">TItem</a>&gt;; constref AKey: TKey; out AHash: UInt32): SizeInt; virtual; abstract; overload;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TOpenAddressing.html#GetEnumerator">GetEnumerator</a></b>: <a  href="Generics.Collections.TOpenAddressing.TPairEnumerator.html">TPairEnumerator</a>; reintroduce;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TOpenAddressing.html#GetKeys">GetKeys</a></b>: <a  href="Generics.Collections.TOpenAddressing.TKeyCollection.html">TKeyCollection</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TOpenAddressing.html#GetValues">GetValues</a></b>: <a  href="Generics.Collections.TOpenAddressing.TValueCollection.html">TValueCollection</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TOpenAddressing.html#GetPointers">GetPointers</a></b>: <a  href="Generics.Collections.TOpenAddressing.html#PPointersCollection">PPointersCollection</a>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TOpenAddressing.html#GetItem">GetItem</a></b>(const AKey: TKey): TValue; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TOpenAddressing.html#SetItem">SetItem</a></b>(const AKey: TKey; const AValue: TValue); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TOpenAddressing.html#AddItem">AddItem</a></b>(var AItem: <a  href="Generics.Collections.TOpenAddressing.TItem.html">TItem</a>; constref AKey: TKey; constref AValue: TValue; const AHash: UInt32); inline;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
@@ -175,32 +238,91 @@ bug #24283 and #24097 (forward declaration) - should be: TCustomDictionary&lt;CU
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="Generics.Collections.TOpenAddressing.html#Items">Items</a></b>[Index:TKey]: TValue read GetItem write SetItem;</code></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TOpenAddressing.html#Items">Items</a></b>[Index:TKey]: TValue read <a  href="Generics.Collections.TOpenAddressing.html#GetItem">GetItem</a> write <a  href="Generics.Collections.TOpenAddressing.html#SetItem">SetItem</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="Generics.Collections.TOpenAddressing.html#Keys">Keys</a></b>: <a  href="Generics.Collections.TOpenAddressing.TKeyCollection.html">TKeyCollection</a> read GetKeys;</code></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TOpenAddressing.html#Keys">Keys</a></b>: <a  href="Generics.Collections.TOpenAddressing.TKeyCollection.html">TKeyCollection</a> read <a  href="Generics.Collections.TOpenAddressing.html#GetKeys">GetKeys</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="Generics.Collections.TOpenAddressing.html#Values">Values</a></b>: <a  href="Generics.Collections.TOpenAddressing.TValueCollection.html">TValueCollection</a> read GetValues;</code></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TOpenAddressing.html#Values">Values</a></b>: <a  href="Generics.Collections.TOpenAddressing.TValueCollection.html">TValueCollection</a> read <a  href="Generics.Collections.TOpenAddressing.html#GetValues">GetValues</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="Generics.Collections.TOpenAddressing.html#Ptr">Ptr</a></b>: <a  href="Generics.Collections.TOpenAddressing.html#PPointersCollection">PPointersCollection</a> read GetPointers;</code></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TOpenAddressing.html#Ptr">Ptr</a></b>: <a  href="Generics.Collections.TOpenAddressing.html#PPointersCollection">PPointersCollection</a> read <a  href="Generics.Collections.TOpenAddressing.html#GetPointers">GetPointers</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Internal Types</h3>
 <table class="detail wide_list">
 <tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="PItem"></span><code><b>PItem</b> = &circ;<a  href="Generics.Collections.TOpenAddressing.TItem.html">TItem</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="PPointersCollection"></span><code><b>PPointersCollection</b> = &circ;TPointersCollection;</code></td>
+<td class="itemcode"><span id="PPointersCollection"></span><code><b>PPointersCollection</b> = &circ;<a  href="Generics.Collections.TOpenAddressing.html#TPointersCollection">TPointersCollection</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="TItemsArray"></span><code><b>TItemsArray</b> = array of <a  href="Generics.Collections.TOpenAddressing.TItem.html">TItem</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="TPointersCollection"></span><code><b>TPointersCollection</b> = <a  href="Generics.Collections.TOpenAddressingPointersCollection.html">TOpenAddressingPointersCollection</a>&lt;<a  href="Generics.Collections.TOpenAddressing.TPointersEnumerator.html">TPointersEnumerator</a>, <a  href="Generics.Collections.TOpenAddressing.TItem.html">TItem</a>, <a  href="Generics.Collections.TCustomDictionary.html#PDictionaryPair">PDictionaryPair</a>&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="FItems"></span><code>var <b>FItems</b>: <a  href="Generics.Collections.TOpenAddressing.html#TItemsArray">TItemsArray</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+FItems must be declared as first field</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="FItemsThreshold"></span><code><b>FItemsThreshold</b>: SizeInt;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
 </table>
 <h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="Resize"></span><code>procedure <b>Resize</b>(ANewSize: SizeInt);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="PrepareAddingItem"></span><code>procedure <b>PrepareAddingItem</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
@@ -228,7 +350,7 @@ bug #24283 and #24097 (forward declaration) - should be: TCustomDictionary&lt;CU
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><span id="FindBucketIndex"></span><code>function <b>FindBucketIndex</b>(constref AItems: TArray&lt;TItem&gt;; constref AKey: TKey; out AHash: UInt32): SizeInt; virtual; abstract; overload;</code></td>
+<td class="itemcode"><span id="FindBucketIndex"></span><code>function <b>FindBucketIndex</b>(constref AItems: TArray&lt;<a  href="Generics.Collections.TOpenAddressing.TItem.html">TItem</a>&gt;; constref AKey: TKey; out AHash: UInt32): SizeInt; virtual; abstract; overload;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
@@ -242,6 +364,54 @@ bug #24283 and #24097 (forward declaration) - should be: TCustomDictionary&lt;CU
 <p>
 bug #24283 - workaround related to lack of DoGetEnumerator</p>
 </td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="GetKeys"></span><code>function <b>GetKeys</b>: <a  href="Generics.Collections.TOpenAddressing.TKeyCollection.html">TKeyCollection</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="GetValues"></span><code>function <b>GetValues</b>: <a  href="Generics.Collections.TOpenAddressing.TValueCollection.html">TValueCollection</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="GetPointers"></span><code>function <b>GetPointers</b>: <a  href="Generics.Collections.TOpenAddressing.html#PPointersCollection">PPointersCollection</a>; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="GetItem"></span><code>function <b>GetItem</b>(const AKey: TKey): TValue; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="SetItem"></span><code>procedure <b>SetItem</b>(const AKey: TKey; const AValue: TValue); inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="AddItem"></span><code>procedure <b>AddItem</b>(var AItem: <a  href="Generics.Collections.TOpenAddressing.TItem.html">TItem</a>; constref AKey: TKey; constref AValue: TValue; const AHash: UInt32); inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -421,7 +591,7 @@ many constructors because bug #25607</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Items"></span><code>property <b>Items</b>[Index:TKey]: TValue read GetItem write SetItem;</code></td>
+<td class="itemcode"><span id="Items"></span><code>property <b>Items</b>[Index:TKey]: TValue read <a  href="Generics.Collections.TOpenAddressing.html#GetItem">GetItem</a> write <a  href="Generics.Collections.TOpenAddressing.html#SetItem">SetItem</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
@@ -429,7 +599,7 @@ many constructors because bug #25607</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Keys"></span><code>property <b>Keys</b>: <a  href="Generics.Collections.TOpenAddressing.TKeyCollection.html">TKeyCollection</a> read GetKeys;</code></td>
+<td class="itemcode"><span id="Keys"></span><code>property <b>Keys</b>: <a  href="Generics.Collections.TOpenAddressing.TKeyCollection.html">TKeyCollection</a> read <a  href="Generics.Collections.TOpenAddressing.html#GetKeys">GetKeys</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
@@ -437,7 +607,7 @@ many constructors because bug #25607</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Values"></span><code>property <b>Values</b>: <a  href="Generics.Collections.TOpenAddressing.TValueCollection.html">TValueCollection</a> read GetValues;</code></td>
+<td class="itemcode"><span id="Values"></span><code>property <b>Values</b>: <a  href="Generics.Collections.TOpenAddressing.TValueCollection.html">TValueCollection</a> read <a  href="Generics.Collections.TOpenAddressing.html#GetValues">GetValues</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
@@ -445,7 +615,7 @@ many constructors because bug #25607</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Ptr"></span><code>property <b>Ptr</b>: <a  href="Generics.Collections.TOpenAddressing.html#PPointersCollection">PPointersCollection</a> read GetPointers;</code></td>
+<td class="itemcode"><span id="Ptr"></span><code>property <b>Ptr</b>: <a  href="Generics.Collections.TOpenAddressing.html#PPointersCollection">PPointersCollection</a> read <a  href="Generics.Collections.TOpenAddressing.html#GetPointers">GetPointers</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>

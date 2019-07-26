@@ -12,7 +12,7 @@
 <h2>generics.collections</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
 <span id="TDeamortizedDArrayCuckooMap"></span><h1 class="cio">Class TDeamortizedDArrayCuckooMap</h1>
 <div class="sections">
-<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-InternalCRs">Internal Classes and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-InternalTypes">Internal Types</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-InternalCRs">Internal Classes and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-InternalTypes">Internal Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
 <a  href="Generics.Collections.html">Generics.Collections</a></p>
@@ -28,6 +28,14 @@ more info : <a  href="http://arxiv.org/abs/0903.0391">http://arxiv.org/abs/0903.
 <li class="thisitem">TDeamortizedDArrayCuckooMap</li></ul><h2 class="overview">Overview</h2>
 <span id="PasDoc-InternalCRs"></span><h3 class="summary">Internal Classes and Records</h3>
 <table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TCDM.html">TCDM</a></b> = class(<a  href="Generics.Collections.TOpenAddressingSH.html">TOpenAddressingSH</a>&lt;TKey,<a  href="Generics.Collections.TEmptyRecord.html">TEmptyRecord</a>,TDefaultHashFactory,TLinearProbing&gt;)</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TItem.html">TItem</a></b> = record</code></td>
+</tr>
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TKeyCollection.html">TKeyCollection</a></b> = class(<a  href="Generics.Collections.TDictionaryEnumerable.html">TDictionaryEnumerable</a>&lt;<a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TKeyEnumerator.html">TKeyEnumerator</a>,<a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TPKeyEnumerator.html">TPKeyEnumerator</a>,TKey,TKey,TValue,THashFactory&gt;)</code></td>
@@ -45,8 +53,16 @@ more info : <a  href="http://arxiv.org/abs/0903.0391">http://arxiv.org/abs/0903.
 <td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TPKeyEnumerator.html">TPKeyEnumerator</a></b> = class(<a  href="Generics.Collections.TDeamortizedDArrayCuckooMapEnumerator.html">TDeamortizedDArrayCuckooMapEnumerator</a>&lt;<a  href="Generics.Collections.TCustomDictionary.html#PKey">PKey</a>,TKey,TValue,THashFactory,TCuckooCfg&gt;)</code></td>
 </tr>
 <tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TPointersEnumerator.html">TPointersEnumerator</a></b> = class(<a  href="Generics.Collections.TDeamortizedDArrayPointersEnumerator.html">TDeamortizedDArrayPointersEnumerator</a>&lt;TCuckooCfg,<a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TItemsArray">TItemsArray</a>,<a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TItemsDArray">TItemsDArray</a>,<a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TQueueDictionary.html">TQueueDictionary</a>,<a  href="Generics.Collections.TCustomDictionary.html#PDictionaryPair">PDictionaryPair</a>&gt;)</code></td>
+</tr>
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TPValueEnumerator.html">TPValueEnumerator</a></b> = class(<a  href="Generics.Collections.TDeamortizedDArrayCuckooMapEnumerator.html">TDeamortizedDArrayCuckooMapEnumerator</a>&lt;<a  href="Generics.Collections.TCustomDictionary.html#PValue">PValue</a>,TKey,TValue,THashFactory,TCuckooCfg&gt;)</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TQueueDictionary.html">TQueueDictionary</a></b> = class(TOpenAddressingLP&lt;TKey,<a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TValueForQueue">TValueForQueue</a>,TDefaultHashFactory,TLinearProbing&gt;)</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -60,121 +76,232 @@ more info : <a  href="http://arxiv.org/abs/0903.0391">http://arxiv.org/abs/0903.
 <span id="PasDoc-InternalTypes"></span><h3 class="summary">Internal Types</h3>
 <table class="summary wide_list">
 <tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#PItem">PItem</a></b> = &circ;<a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TItem.html">TItem</a>;</code></td>
+</tr>
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#PPointersCollection">PPointersCollection</a></b> = &circ;TPointersCollection;</code></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#PPointersCollection">PPointersCollection</a></b> = &circ;<a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TPointersCollection">TPointersCollection</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TItemsArray">TItemsArray</a></b> = array of <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TItem.html">TItem</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TItemsDArray">TItemsDArray</a></b> = array[0..Pred(TCuckooCfg.D)] of <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TItemsArray">TItemsArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TPointersCollection">TPointersCollection</a></b> = <a  href="Generics.Collections.TDeamortizedDArrayPointersCollection.html">TDeamortizedDArrayPointersCollection</a>&lt;<a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TPointersEnumerator.html">TPointersEnumerator</a>, <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TItemsDArray">TItemsDArray</a>, <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TQueueDictionary.html">TQueueDictionary</a>, <a  href="Generics.Collections.TCustomDictionary.html#PDictionaryPair">PDictionaryPair</a>&gt;;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TValueForQueue">TValueForQueue</a></b> = <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TItem.html">TItem</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>internal const <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#LR_NIL">LR_NIL</a></b> = -1;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>internal const <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#LR_QUEUE">LR_QUEUE</a></b> = -2;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>var <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#FItems">FItems</a></b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TItemsDArray">TItemsDArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#FQueue">FQueue</a></b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TQueueDictionary.html">TQueueDictionary</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#FCDM">FCDM</a></b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TCDM.html">TCDM</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#FItemsThreshold">FItemsThreshold</a></b>: SizeInt;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>var <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#CUCKOO_SIGN">CUCKOO_SIGN</a></b>: UInt32;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>var <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#CUCKOO_INDEX_SIZE">CUCKOO_INDEX_SIZE</a></b>: UInt32;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>var <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#CUCKOO_HASH_SIGN">CUCKOO_HASH_SIGN</a></b>: UInt32;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Resize">Resize</a></b>(ANewSize: SizeInt);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Rehash">Rehash</a></b>(ASizePow2: SizeInt);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#PrepareAddingItem">PrepareAddingItem</a></b>;</code></td>
+</tr>
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#UpdateItemsThreshold">UpdateItemsThreshold</a></b>(ASize: SizeInt); override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Lookup">Lookup</a></b>(constref AKey: TKey; var AHashListOrIndex: PUInt32): SizeInt; inline; overload;</code></td>
 </tr>
-<tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Lookup">Lookup</a></b>(constref AItems: TItemsDArray; constref AKey: TKey; var AHashListOrIndex: PUInt32): SizeInt; virtual; overload;</code></td>
-</tr>
 <tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Lookup">Lookup</a></b>(constref AItems: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TItemsDArray">TItemsDArray</a>; constref AKey: TKey; var AHashListOrIndex: PUInt32): SizeInt; virtual; overload;</code></td>
+</tr>
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetEnumerator">GetEnumerator</a></b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TPairEnumerator.html">TPairEnumerator</a>; reintroduce;</code></td>
 </tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetKeys">GetKeys</a></b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TKeyCollection.html">TKeyCollection</a>;</code></td>
+</tr>
 <tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetValues">GetValues</a></b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TValueCollection.html">TValueCollection</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetPointers">GetPointers</a></b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#PPointersCollection">PPointersCollection</a>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetItem">GetItem</a></b>(const AKey: TKey): TValue; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#SetItem">SetItem</a></b>(const AKey: TKey; const AValue: TValue); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#SetItem">SetItem</a></b>(constref AValue: TValue; const AHashListOrIndex: PUInt32; ALookupResult: SizeInt); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#AddItem">AddItem</a></b>(constref AItems: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TItemsDArray">TItemsDArray</a>; constref AKey: TKey; constref AValue: TValue; const AHashList: PUInt32); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#DoAdd">DoAdd</a></b>(const AKey: TKey; const AValue: TValue; const AHashList: PUInt32); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#DoRemove">DoRemove</a></b>(const AHashListOrIndex: PUInt32; ALookupResult: SizeInt; ACollectionNotification: <a  href="Generics.Collections.html#TCollectionNotification">TCollectionNotification</a>): TValue;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetQueueCount">GetQueueCount</a></b>: SizeInt;</code></td>
+</tr>
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#SetCapacity">SetCapacity</a></b>(ACapacity: SizeInt); override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#DoGetEnumerator">DoGetEnumerator</a></b>: <a  href="Generics.Collections.TEnumerator.html">TEnumerator</a>&lt;<a  href="Generics.Collections.TCustomDictionary.html#TDictionaryPair">TDictionaryPair</a>&gt;; override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#SetMaxLoadFactor">SetMaxLoadFactor</a></b>(AValue: single); override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetLoadFactor">GetLoadFactor</a></b>: single; override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetCapacity">GetCapacity</a></b>: SizeInt; override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>constructor <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Create">Create</a></b>; override; overload;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>constructor <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Create">Create</a></b>(ACapacity: SizeInt); override; overload;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>constructor <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Create">Create</a></b>(ACollection: <a  href="Generics.Collections.TEnumerable.html">TEnumerable</a>&lt;<a  href="Generics.Collections.TCustomDictionary.html#TDictionaryPair">TDictionaryPair</a>&gt;); override; overload;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>constructor <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Create">Create</a></b>(ACapacity: SizeInt; const AComparer: IExtendedEqualityComparer&lt;TKey&gt;); virtual; overload;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>constructor <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Create">Create</a></b>(const AComparer: IExtendedEqualityComparer&lt;TKey&gt;); overload;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>constructor <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Create">Create</a></b>(ACollection: <a  href="Generics.Collections.TEnumerable.html">TEnumerable</a>&lt;<a  href="Generics.Collections.TCustomDictionary.html#TDictionaryPair">TDictionaryPair</a>&gt;; const AComparer: IExtendedEqualityComparer&lt;TKey&gt;); virtual; overload;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>destructor <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Destroy">Destroy</a></b>; override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Add">Add</a></b>(constref APair: <a  href="Generics.Collections.TPair.html">TPair</a>&lt;TKey, TValue&gt;); override; overload;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Add">Add</a></b>(constref AKey: TKey; constref AValue: TValue); overload;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Remove">Remove</a></b>(constref AKey: TKey);</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#ExtractPair">ExtractPair</a></b>(constref AKey: TKey): <a  href="Generics.Collections.TPair.html">TPair</a>&lt;TKey, TValue&gt;;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Clear">Clear</a></b>; override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TrimExcess">TrimExcess</a></b>;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TryGetValue">TryGetValue</a></b>(constref AKey: TKey; out AValue: TValue): Boolean;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#AddOrSetValue">AddOrSetValue</a></b>(constref AKey: TKey; constref AValue: TValue);</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#ContainsKey">ContainsKey</a></b>(constref AKey: TKey): Boolean; inline;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#ContainsValue">ContainsValue</a></b>(constref AValue: TValue): Boolean; overload;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#ContainsValue">ContainsValue</a></b>(constref AValue: TValue; const AEqualityComparer: IEqualityComparer&lt;TValue&gt;): Boolean; virtual; overload;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetMemoryLayout">GetMemoryLayout</a></b>(const AOnGetMemoryLayoutKeyPosition: <a  href="Generics.Collections.html#TOnGetMemoryLayoutKeyPosition">TOnGetMemoryLayoutKeyPosition</a>);</code></td>
 </tr>
@@ -183,36 +310,187 @@ more info : <a  href="http://arxiv.org/abs/0903.0391">http://arxiv.org/abs/0903.
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Items">Items</a></b>[Index:TKey]: TValue read GetItem write SetItem;</code></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Items">Items</a></b>[Index:TKey]: TValue read <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetItem">GetItem</a> write <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#SetItem">SetItem</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Keys">Keys</a></b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TKeyCollection.html">TKeyCollection</a> read GetKeys;</code></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Keys">Keys</a></b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TKeyCollection.html">TKeyCollection</a> read <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetKeys">GetKeys</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Values">Values</a></b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TValueCollection.html">TValueCollection</a> read GetValues;</code></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Values">Values</a></b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TValueCollection.html">TValueCollection</a> read <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetValues">GetValues</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Ptr">Ptr</a></b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#PPointersCollection">PPointersCollection</a> read GetPointers;</code></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#Ptr">Ptr</a></b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#PPointersCollection">PPointersCollection</a> read <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetPointers">GetPointers</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#QueueCount">QueueCount</a></b>: SizeInt read GetQueueCount;</code></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#QueueCount">QueueCount</a></b>: SizeInt read <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetQueueCount">GetQueueCount</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Internal Types</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="PPointersCollection"></span><code><b>PPointersCollection</b> = &circ;TPointersCollection;</code></td>
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="PItem"></span><code><b>PItem</b> = &circ;<a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TItem.html">TItem</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
 </table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PPointersCollection"></span><code><b>PPointersCollection</b> = &circ;<a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TPointersCollection">TPointersCollection</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="TItemsArray"></span><code><b>TItemsArray</b> = array of <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TItem.html">TItem</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="TItemsDArray"></span><code><b>TItemsDArray</b> = array[0..Pred(TCuckooCfg.D)] of <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TItemsArray">TItemsArray</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="TPointersCollection"></span><code><b>TPointersCollection</b> = <a  href="Generics.Collections.TDeamortizedDArrayPointersCollection.html">TDeamortizedDArrayPointersCollection</a>&lt;<a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TPointersEnumerator.html">TPointersEnumerator</a>, <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TItemsDArray">TItemsDArray</a>, <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TQueueDictionary.html">TQueueDictionary</a>, <a  href="Generics.Collections.TCustomDictionary.html#PDictionaryPair">PDictionaryPair</a>&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="TValueForQueue"></span><code><b>TValueForQueue</b> = <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TItem.html">TItem</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="LR_NIL"></span><code>internal const <b>LR_NIL</b> = -1;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Lookup Result</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="LR_QUEUE"></span><code>internal const <b>LR_QUEUE</b> = -2;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="FItems"></span><code>var <b>FItems</b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TItemsDArray">TItemsDArray</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="FQueue"></span><code><b>FQueue</b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TQueueDictionary.html">TQueueDictionary</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="FCDM"></span><code><b>FCDM</b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TCDM.html">TCDM</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+probably can be optimized - hash TItem give information from TItem.Hash for cuckoo ... currently is kept in &quot;TQueueDictionary = class(TOpenAddressingSH&lt;TKey, TItem, ...&gt;&quot;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="FItemsThreshold"></span><code><b>FItemsThreshold</b>: SizeInt;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+cycle-detection mechanism</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="CUCKOO_SIGN"></span><code>var <b>CUCKOO_SIGN</b>: UInt32;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+class</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="CUCKOO_INDEX_SIZE"></span><code>var <b>CUCKOO_INDEX_SIZE</b>: UInt32;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+class</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="CUCKOO_HASH_SIGN"></span><code>var <b>CUCKOO_HASH_SIGN</b>: UInt32;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+class</p>
+</td></tr>
+</table>
 <h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="Resize"></span><code>procedure <b>Resize</b>(ANewSize: SizeInt);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+CUCKOO_MAX_ITEMS_LENGTH: &lt;- to do : calc max length for items based on CUCKOO sign maybe some CDM bloom filter?</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="Rehash"></span><code>procedure <b>Rehash</b>(ASizePow2: SizeInt);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="PrepareAddingItem"></span><code>procedure <b>PrepareAddingItem</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
@@ -232,7 +510,7 @@ more info : <a  href="http://arxiv.org/abs/0903.0391">http://arxiv.org/abs/0903.
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><span id="Lookup"></span><code>function <b>Lookup</b>(constref AItems: TItemsDArray; constref AKey: TKey; var AHashListOrIndex: PUInt32): SizeInt; virtual; overload;</code></td>
+<td class="itemcode"><span id="Lookup"></span><code>function <b>Lookup</b>(constref AItems: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TItemsDArray">TItemsDArray</a>; constref AKey: TKey; var AHashListOrIndex: PUInt32): SizeInt; virtual; overload;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
@@ -246,6 +524,86 @@ more info : <a  href="http://arxiv.org/abs/0903.0391">http://arxiv.org/abs/0903.
 <p>
 bug #24283 - workaround related to lack of DoGetEnumerator</p>
 </td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="GetKeys"></span><code>function <b>GetKeys</b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TKeyCollection.html">TKeyCollection</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="GetValues"></span><code>function <b>GetValues</b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TValueCollection.html">TValueCollection</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="GetPointers"></span><code>function <b>GetPointers</b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#PPointersCollection">PPointersCollection</a>; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="GetItem"></span><code>function <b>GetItem</b>(const AKey: TKey): TValue; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="SetItem"></span><code>procedure <b>SetItem</b>(const AKey: TKey; const AValue: TValue); overload; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="SetItem"></span><code>procedure <b>SetItem</b>(constref AValue: TValue; const AHashListOrIndex: PUInt32; ALookupResult: SizeInt); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="AddItem"></span><code>procedure <b>AddItem</b>(constref AItems: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#TItemsDArray">TItemsDArray</a>; constref AKey: TKey; constref AValue: TValue; const AHashList: PUInt32); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="DoAdd"></span><code>procedure <b>DoAdd</b>(const AKey: TKey; const AValue: TValue; const AHashList: PUInt32); overload; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="DoRemove"></span><code>function <b>DoRemove</b>(const AHashListOrIndex: PUInt32; ALookupResult: SizeInt; ACollectionNotification: <a  href="Generics.Collections.html#TCollectionNotification">TCollectionNotification</a>): TValue;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="GetQueueCount"></span><code>function <b>GetQueueCount</b>: SizeInt;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -447,7 +805,7 @@ TODO: function TryFlushQueue(ACount: SizeInt): SizeInt;</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Items"></span><code>property <b>Items</b>[Index:TKey]: TValue read GetItem write SetItem;</code></td>
+<td class="itemcode"><span id="Items"></span><code>property <b>Items</b>[Index:TKey]: TValue read <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetItem">GetItem</a> write <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#SetItem">SetItem</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
@@ -455,7 +813,7 @@ TODO: function TryFlushQueue(ACount: SizeInt): SizeInt;</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Keys"></span><code>property <b>Keys</b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TKeyCollection.html">TKeyCollection</a> read GetKeys;</code></td>
+<td class="itemcode"><span id="Keys"></span><code>property <b>Keys</b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TKeyCollection.html">TKeyCollection</a> read <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetKeys">GetKeys</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
@@ -463,7 +821,7 @@ TODO: function TryFlushQueue(ACount: SizeInt): SizeInt;</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Values"></span><code>property <b>Values</b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TValueCollection.html">TValueCollection</a> read GetValues;</code></td>
+<td class="itemcode"><span id="Values"></span><code>property <b>Values</b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.TValueCollection.html">TValueCollection</a> read <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetValues">GetValues</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
@@ -471,7 +829,7 @@ TODO: function TryFlushQueue(ACount: SizeInt): SizeInt;</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Ptr"></span><code>property <b>Ptr</b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#PPointersCollection">PPointersCollection</a> read GetPointers;</code></td>
+<td class="itemcode"><span id="Ptr"></span><code>property <b>Ptr</b>: <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#PPointersCollection">PPointersCollection</a> read <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetPointers">GetPointers</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
@@ -479,7 +837,7 @@ TODO: function TryFlushQueue(ACount: SizeInt): SizeInt;</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="QueueCount"></span><code>property <b>QueueCount</b>: SizeInt read GetQueueCount;</code></td>
+<td class="itemcode"><span id="QueueCount"></span><code>property <b>QueueCount</b>: SizeInt read <a  href="Generics.Collections.TDeamortizedDArrayCuckooMap.html#GetQueueCount">GetQueueCount</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>

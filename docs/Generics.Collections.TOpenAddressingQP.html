@@ -12,7 +12,7 @@
 <h2>generics.collections</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
 <span id="TOpenAddressingQP"></span><h1 class="cio">Class TOpenAddressingQP</h1>
 <div class="sections">
-<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section">Properties</div></div>
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section">Properties</div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
 <a  href="Generics.Collections.html">Generics.Collections</a></p>
@@ -29,6 +29,13 @@ More info and TODO <a  href="https://github.com/OpenHFT/UntitledCollectionsProje
 <li class="ancestor"><a class="normal" href="Generics.Collections.TOpenAddressingTombstones.html">TOpenAddressingTombstones</a></li>
 <li class="ancestor"><a class="normal" href="Generics.Collections.TOpenAddressingSH.html">TOpenAddressingSH</a></li>
 <li class="thisitem">TOpenAddressingQP</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TOpenAddressingQP.html#FPrimaryNumberAsSizeApproximation">FPrimaryNumberAsSizeApproximation</a></b>: SizeInt;</code></td>
+</tr>
+</table>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
@@ -37,14 +44,23 @@ More info and TODO <a  href="https://github.com/OpenHFT/UntitledCollectionsProje
 </tr>
 <tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>function <b><a  href="Generics.Collections.TOpenAddressingQP.html#FindBucketIndex">FindBucketIndex</a></b>(constref AItems: TArray&lt;TItem&gt;; constref AKey: TKey; out AHash: UInt32): SizeInt; override; overload;</code></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TOpenAddressingQP.html#FindBucketIndex">FindBucketIndex</a></b>(constref AItems: TArray&lt;<a  href="Generics.Collections.TOpenAddressing.TItem.html">TItem</a>&gt;; constref AKey: TKey; out AHash: UInt32): SizeInt; override; overload;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>function <b><a  href="Generics.Collections.TOpenAddressingQP.html#FindBucketIndexOrTombstone">FindBucketIndexOrTombstone</a></b>(constref AItems: TArray&lt;TItem&gt;; constref AKey: TKey; out AHash: UInt32): SizeInt; override;</code></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TOpenAddressingQP.html#FindBucketIndexOrTombstone">FindBucketIndexOrTombstone</a></b>(constref AItems: TArray&lt;<a  href="Generics.Collections.TOpenAddressing.TItem.html">TItem</a>&gt;; constref AKey: TKey; out AHash: UInt32): SizeInt; override;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="FPrimaryNumberAsSizeApproximation"></span><code><b>FPrimaryNumberAsSizeApproximation</b>: SizeInt;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
 <h3 class="detail">Methods</h3>
 <table class="detail wide_list">
 <tr class="list">
@@ -57,7 +73,7 @@ More info and TODO <a  href="https://github.com/OpenHFT/UntitledCollectionsProje
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><span id="FindBucketIndex"></span><code>function <b>FindBucketIndex</b>(constref AItems: TArray&lt;TItem&gt;; constref AKey: TKey; out AHash: UInt32): SizeInt; override; overload;</code></td>
+<td class="itemcode"><span id="FindBucketIndex"></span><code>function <b>FindBucketIndex</b>(constref AItems: TArray&lt;<a  href="Generics.Collections.TOpenAddressing.TItem.html">TItem</a>&gt;; constref AKey: TKey; out AHash: UInt32): SizeInt; override; overload;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
@@ -65,7 +81,7 @@ More info and TODO <a  href="https://github.com/OpenHFT/UntitledCollectionsProje
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><span id="FindBucketIndexOrTombstone"></span><code>function <b>FindBucketIndexOrTombstone</b>(constref AItems: TArray&lt;TItem&gt;; constref AKey: TKey; out AHash: UInt32): SizeInt; override;</code></td>
+<td class="itemcode"><span id="FindBucketIndexOrTombstone"></span><code>function <b>FindBucketIndexOrTombstone</b>(constref AItems: TArray&lt;<a  href="Generics.Collections.TOpenAddressing.TItem.html">TItem</a>&gt;; constref AKey: TKey; out AHash: UInt32): SizeInt; override;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>

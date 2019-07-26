@@ -67,6 +67,14 @@ bug #24283 and #24097 (forward declaration) - should be: TCustomDictionary&lt;CU
 <td class="itemcode"><code><b><a  href="Generics.Collections.TCustomDictionary.html#FMaxLoadFactor">FMaxLoadFactor</a></b>: single;</code></td>
 </tr>
 <tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomDictionary.html#FOnKeyNotify">FOnKeyNotify</a></b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TKey&gt;;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a  href="Generics.Collections.TCustomDictionary.html#FOnValueNotify">FOnValueNotify</a></b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TValue&gt;;</code></td>
+</tr>
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code><b><a  href="Generics.Collections.TCustomDictionary.html#FItemsLength">FItemsLength</a></b>: SizeInt;</code></td>
 </tr>
@@ -170,11 +178,11 @@ bug #24283 and #24097 (forward declaration) - should be: TCustomDictionary&lt;CU
 </tr>
 <tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomDictionary.html#OnKeyNotify">OnKeyNotify</a></b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TKey&gt; read FOnKeyNotify write FOnKeyNotify;</code></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomDictionary.html#OnKeyNotify">OnKeyNotify</a></b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TKey&gt; read <a  href="Generics.Collections.TCustomDictionary.html#FOnKeyNotify">FOnKeyNotify</a> write <a  href="Generics.Collections.TCustomDictionary.html#FOnKeyNotify">FOnKeyNotify</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomDictionary.html#OnValueNotify">OnValueNotify</a></b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TValue&gt; read FOnValueNotify write FOnValueNotify;</code></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TCustomDictionary.html#OnValueNotify">OnValueNotify</a></b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TValue&gt; read <a  href="Generics.Collections.TCustomDictionary.html#FOnValueNotify">FOnValueNotify</a> write <a  href="Generics.Collections.TCustomDictionary.html#FOnValueNotify">FOnValueNotify</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -254,6 +262,22 @@ workaround... no generics types in generics types</p>
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><span id="FMaxLoadFactor"></span><code><b>FMaxLoadFactor</b>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="FOnKeyNotify"></span><code><b>FOnKeyNotify</b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TKey&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="FOnValueNotify"></span><code><b>FOnValueNotify</b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TValue&gt;;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
@@ -463,7 +487,7 @@ override; final; // bug #24283</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="OnKeyNotify"></span><code>property <b>OnKeyNotify</b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TKey&gt; read FOnKeyNotify write FOnKeyNotify;</code></td>
+<td class="itemcode"><span id="OnKeyNotify"></span><code>property <b>OnKeyNotify</b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TKey&gt; read <a  href="Generics.Collections.TCustomDictionary.html#FOnKeyNotify">FOnKeyNotify</a> write <a  href="Generics.Collections.TCustomDictionary.html#FOnKeyNotify">FOnKeyNotify</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
@@ -471,7 +495,7 @@ override; final; // bug #24283</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="OnValueNotify"></span><code>property <b>OnValueNotify</b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TValue&gt; read FOnValueNotify write FOnValueNotify;</code></td>
+<td class="itemcode"><span id="OnValueNotify"></span><code>property <b>OnValueNotify</b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;TValue&gt; read <a  href="Generics.Collections.TCustomDictionary.html#FOnValueNotify">FOnValueNotify</a> write <a  href="Generics.Collections.TCustomDictionary.html#FOnValueNotify">FOnValueNotify</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>

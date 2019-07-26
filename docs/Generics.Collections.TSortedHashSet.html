@@ -57,78 +57,82 @@ TCustomHashSet&lt;T&gt;</p>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TSortedHashSet.html#InternalDictionaryNotify">InternalDictionaryNotify</a></b>(ASender: TObject; constref AItem: <a  href="Generics.Collections.TCustomSet.html#PT">PT</a>; AAction: <a  href="Generics.Collections.html#TCollectionNotification">TCollectionNotification</a>);</code></td>
+</tr>
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TSortedHashSet.html#DoGetEnumerator">DoGetEnumerator</a></b>: <a  href="Generics.Collections.TEnumerator.html">TEnumerator</a>&lt;T&gt;; override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TSortedHashSet.html#GetCount">GetCount</a></b>: SizeInt; override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TSortedHashSet.html#GetCapacity">GetCapacity</a></b>: SizeInt; override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TSortedHashSet.html#SetCapacity">SetCapacity</a></b>(AValue: SizeInt); override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TSortedHashSet.html#GetOnNotify">GetOnNotify</a></b>: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;T&gt;; override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TSortedHashSet.html#SetOnNotify">SetOnNotify</a></b>(AValue: <a  href="Generics.Collections.html#TCollectionNotifyEvent">TCollectionNotifyEvent</a>&lt;T&gt;); override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TSortedHashSet.html#GetPtrEnumerator">GetPtrEnumerator</a></b>: <a  href="Generics.Collections.TEnumerator.html">TEnumerator</a>&lt;<a  href="Generics.Collections.TCustomSet.html#PT">PT</a>&gt;; override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>constructor <b><a  href="Generics.Collections.TSortedHashSet.html#Create">Create</a></b>; override; overload;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>constructor <b><a  href="Generics.Collections.TSortedHashSet.html#Create">Create</a></b>(const AComparer: IEqualityComparer&lt;T&gt;); overload;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>constructor <b><a  href="Generics.Collections.TSortedHashSet.html#Create">Create</a></b>(const AComparer: IComparer&lt;T&gt;); overload;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>constructor <b><a  href="Generics.Collections.TSortedHashSet.html#Create">Create</a></b>(const AComparer: IComparer&lt;T&gt;; const AEqualityComparer: IEqualityComparer&lt;T&gt;); overload;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>destructor <b><a  href="Generics.Collections.TSortedHashSet.html#Destroy">Destroy</a></b>; override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TSortedHashSet.html#GetEnumerator">GetEnumerator</a></b>: <a  href="Generics.Collections.TCustomSet.TCustomSetEnumerator.html">TCustomSetEnumerator</a>; override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TSortedHashSet.html#Add">Add</a></b>(constref AValue: T): Boolean; override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TSortedHashSet.html#Remove">Remove</a></b>(constref AValue: T): Boolean; override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TSortedHashSet.html#Extract">Extract</a></b>(constref AValue: T): T; override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TSortedHashSet.html#Clear">Clear</a></b>; override;</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TSortedHashSet.html#Contains">Contains</a></b>(constref AValue: T): Boolean; override;</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TSortedHashSet.html#TrimExcess">TrimExcess</a></b>; override;</code></td>
 </tr>
@@ -152,6 +156,14 @@ TCustomHashSet&lt;T&gt;</p>
 &nbsp;</td></tr>
 </table>
 <h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="InternalDictionaryNotify"></span><code>procedure <b>InternalDictionaryNotify</b>(ASender: TObject; constref AItem: <a  href="Generics.Collections.TCustomSet.html#PT">PT</a>; AAction: <a  href="Generics.Collections.html#TCollectionNotification">TCollectionNotification</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>

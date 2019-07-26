@@ -12,7 +12,7 @@
 <h2>generics.collections</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
 <span id="TOpenAddressingPointersCollection"></span><h1 class="cio">Record TOpenAddressingPointersCollection</h1>
 <div class="sections">
-<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Hierarchy</div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Hierarchy</div><div class="one_section"><a class="section" href="#PasDoc-InternalTypes">Internal Types</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
 <a  href="Generics.Collections.html">Generics.Collections</a></p>
@@ -21,8 +21,20 @@
 <code>type TOpenAddressingPointersCollection&lt;TPointersEnumerator,TItem,PDictionaryPair&gt; = record</code></p>
 <h2 class="description">Description</h2>
 &nbsp;<h2 class="overview">Overview</h2>
+<span id="PasDoc-InternalTypes"></span><h3 class="summary">Internal Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Generics.Collections.TOpenAddressingPointersCollection.html#PArray">PArray</a></b> = &circ;TArray&lt;TItem&gt;;</code></td>
+</tr>
+</table>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TOpenAddressingPointersCollection.html#Items">Items</a></b>: <a  href="Generics.Collections.TOpenAddressingPointersCollection.html#PArray">PArray</a>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TOpenAddressingPointersCollection.html#GetCount">GetCount</a></b>: SizeInt; inline;</code></td>
+</tr>
 <tr class="list">
 <td class="itemcode"><code>function <b><a  href="Generics.Collections.TOpenAddressingPointersCollection.html#GetEnumerator">GetEnumerator</a></b>: TPointersEnumerator;</code></td>
 </tr>
@@ -33,11 +45,33 @@
 <span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
 <table class="summary wide_list">
 <tr class="list">
-<td class="itemcode"><code>property <b><a  href="Generics.Collections.TOpenAddressingPointersCollection.html#Count">Count</a></b>: SizeInt read GetCount;</code></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TOpenAddressingPointersCollection.html#Count">Count</a></b>: SizeInt read <a  href="Generics.Collections.TOpenAddressingPointersCollection.html#GetCount">GetCount</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
+<h3 class="detail">Internal Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PArray"></span><code><b>PArray</b> = &circ;TArray&lt;TItem&gt;;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
 <h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Items"></span><code>function <b>Items</b>: <a  href="Generics.Collections.TOpenAddressingPointersCollection.html#PArray">PArray</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetCount"></span><code>function <b>GetCount</b>: SizeInt; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="itemcode"><span id="GetEnumerator"></span><code>function <b>GetEnumerator</b>: TPointersEnumerator;</code></td>
@@ -55,7 +89,7 @@
 <h3 class="detail">Properties</h3>
 <table class="detail wide_list">
 <tr class="list">
-<td class="itemcode"><span id="Count"></span><code>property <b>Count</b>: SizeInt read GetCount;</code></td>
+<td class="itemcode"><span id="Count"></span><code>property <b>Count</b>: SizeInt read <a  href="Generics.Collections.TOpenAddressingPointersCollection.html#GetCount">GetCount</a>;</code></td>
 </tr>
 <tr><td colspan="1">
 &nbsp;</td></tr>

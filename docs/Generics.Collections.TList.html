@@ -12,7 +12,7 @@
 <h2>generics.collections</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p></td><td class="content">
 <span id="TList"></span><h1 class="cio">Class TList</h1>
 <div class="sections">
-<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-InternalCRs">Internal Classes and Records</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-InternalCRs">Internal Classes and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
 <a  href="Generics.Collections.html">Generics.Collections</a></p>
@@ -34,6 +34,13 @@ More info: <a  href="http://stackoverflow.com/questions/5232198/about-vectors-gr
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
 <td class="itemcode"><code><b><a  href="Generics.Collections.TList.TEnumerator.html">TEnumerator</a></b> = class(<a  href="Generics.Collections.TCustomListEnumerator.html">TCustomListEnumerator</a>&lt;T&gt;)</code></td>
+</tr>
+</table>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>var <b><a  href="Generics.Collections.TList.html#FComparer">FComparer</a></b>: IComparer&lt;T&gt;;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
@@ -61,6 +68,14 @@ More info: <a  href="http://stackoverflow.com/questions/5232198/about-vectors-gr
 <tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TList.html#InternalInsert">InternalInsert</a></b>(AIndex: SizeInt; constref AValue: T);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a  href="Generics.Collections.TList.html#GetItem">GetItem</a></b>(AIndex: SizeInt): T;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="Generics.Collections.TList.html#SetItem">SetItem</a></b>(AIndex: SizeInt; const AValue: T);</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -195,10 +210,19 @@ More info: <a  href="http://stackoverflow.com/questions/5232198/about-vectors-gr
 </tr>
 <tr class="list2">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <b><a  href="Generics.Collections.TList.html#Items">Items</a></b>[Index:SizeInt]: T read GetItem write SetItem;</code></td>
+<td class="itemcode"><code>property <b><a  href="Generics.Collections.TList.html#Items">Items</a></b>[Index:SizeInt]: T read <a  href="Generics.Collections.TList.html#GetItem">GetItem</a> write <a  href="Generics.Collections.TList.html#SetItem">SetItem</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="FComparer"></span><code>var <b>FComparer</b>: IComparer&lt;T&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
 <h3 class="detail">Methods</h3>
 <table class="detail wide_list">
 <tr class="list">
@@ -246,6 +270,22 @@ bug #24287 - workaround for generics type name conflict (Identifier not found) n
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
 <td class="itemcode"><span id="InternalInsert"></span><code>procedure <b>InternalInsert</b>(AIndex: SizeInt; constref AValue: T);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="GetItem"></span><code>function <b>GetItem</b>(AIndex: SizeInt): T;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><span id="SetItem"></span><code>procedure <b>SetItem</b>(AIndex: SizeInt; const AValue: T);</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
@@ -510,7 +550,7 @@ bug #24287 - workaround for generics type name conflict (Identifier not found) n
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Items"></span><code>property <b>Items</b>[Index:SizeInt]: T read GetItem write SetItem;</code></td>
+<td class="itemcode"><span id="Items"></span><code>property <b>Items</b>[Index:SizeInt]: T read <a  href="Generics.Collections.TList.html#GetItem">GetItem</a> write <a  href="Generics.Collections.TList.html#SetItem">SetItem</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
